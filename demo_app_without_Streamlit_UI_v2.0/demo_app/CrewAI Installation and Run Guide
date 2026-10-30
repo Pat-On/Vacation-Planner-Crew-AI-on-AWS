@@ -1,0 +1,37 @@
+
+............1. Pre-Requisites................
+
+1. VSCode - https://code.visualstudio.com/download
+2. Install Python ---> Recommended: 3.11.9 (3.10 to 3.13) - https://www.python.org/downloads/
+3. Install AWS CLI --- > https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+4. Setup IAM Role for AWS CLI
+5. Optional Step - Download C++ compiler for VSCode ---- > https://code.visualstudio.com/docs/cpp/config-mingw
+....................................................................
+
+
+
+
+
+......2. CrewAI Installation---> https://docs.crewai.com/installation................
+pip install uv
+uv --version
+uv tool install crewai
+uv tool list
+uv tool update-shell (One time to set the path)
+.......................................................................
+
+.........3. Create Project............
+crewai create crew vacation_planner
+Select 8
+Bedrock Model in .env  -----> Should have access to Model (Check from console)
+Set Access Key, Secret Key, region-us.west-2
+Update Agent and Task details in YAML
+Add Tools to Agents in Crew.py 
+Update Agent and Task details in Crew.py
+Add input in main.py
+
+...........Run the Project.....................
+Lock dependencies --- > crewai install (uv lock file)
+uv add boto3
+Run Command --- > crewai run
+............................................
