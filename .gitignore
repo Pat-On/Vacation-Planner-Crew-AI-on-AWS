@@ -1,0 +1,26 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments (uv creates .venv inside each project)
+.venv/
+venv/
+env/
+
+# Crew output and CrewAI training files
+report.md
+*.pkl
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
